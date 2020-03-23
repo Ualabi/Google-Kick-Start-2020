@@ -16,5 +16,5 @@ def getSol(N,K,P):
 T = int(input())
 for x in range(T):
     [N,K,P] = list(map(int,input().split()))
-    resp = getSol(N,K,P)
-    print('Case #{}: {}'.format(x+1,resp))
+    mysol = getSol(N,K,P)
+    print('Case #{}: {}'.format(x+1,mysol))
