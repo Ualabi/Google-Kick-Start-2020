@@ -1,4 +1,3 @@
-#solucion
 def getSol(N,K,P):
     dp = []
     for x in range(N+1):  
