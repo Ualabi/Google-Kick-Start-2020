@@ -6,6 +6,5 @@ for x in range(T):
     y = 0
     while y<len(arr) and arr[y] <= k:
         k -= arr[y]
-        y += 1
-    
+        y += 1    
     print('Case #{}: {}'.format(x+1,y))
