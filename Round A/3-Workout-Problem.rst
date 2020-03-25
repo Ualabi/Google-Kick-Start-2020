@@ -36,7 +36,14 @@ Sample
 ------
 
 ::
-
+    Input           Output
+    
+    2
+    3
+    5 1 2           Case #1: 1 1 2
+    6               Case #2: 1 1 2 2 2 3
+    1 3 3 2 2 15
+    
     Input           Output
     
     2
@@ -45,6 +52,8 @@ Sample
     6               Case #2: 1 1 2 2 2 3
     1 3 3 2 2 15
 
+Sample #1
+~~~~~~~~~~~~~~~~~~~~
 In Sample Case #1, Jorge wrote **N** = 3 papers.
 
 - After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
@@ -53,6 +62,8 @@ In Sample Case #1, Jorge wrote **N** = 3 papers.
 - After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
   at least 2 citations (the 1st and 3rd papers).
 
+Sample #2
+~~~~~~~~~~~~~~~~~~~~
 In Sample Case #2, Jorge wrote **N** = 6 papers.
 
 - After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
