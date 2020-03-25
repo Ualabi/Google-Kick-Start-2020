@@ -1,22 +1,10 @@
 Problem
 -------
-It is important for researchers to write many high quality academic papers.
-Jorge has recently discovered a way to measure how impactful a researcher's
-papers are: the H-index_.
+Tambourine has prepared a fitness program so that she can become more fit! The program is made of **N** sessions. During the i-th session, Tambourine will exercise for **Mi** minutes. The number of minutes she exercises in each session are strictly increasing.
 
-.. _H-index: https://en.wikipedia.org/wiki/H-index
+The difficulty of her fitness program is equal to the maximum difference in the number of minutes between any two consecutive training sessions.
 
-The *H-index score* of a researcher is the largest integer h such that the
-researcher has h papers with at least h citations each.
-
-Jorge has written **N** papers in his lifetime. The i-th paper has **A**\ |i|
-citations. The number of citations that each paper has will never change after
-it is written. Please help Jorge determine his H-index score after each paper
-he wrote.
-
-.. |i| raw:: html
-
-    <b><sub>i</sub></b>
+To make her program less *difficult*, Tambourine has decided to add up to **K** additional training sessions to her fitness program. She can add these sessions anywhere in her fitness program, and exercise any positive integer number of minutes in each of them. After the additional training session are added, the number of minutes she exercises in each session must still be strictly increasing. What is the minimum difficulty possible?
 
 Input
 -----
