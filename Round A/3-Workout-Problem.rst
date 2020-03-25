@@ -8,19 +8,11 @@ To make her program less *difficult*, Tambourine has decided to add up to **K** 
 
 Input
 -----
-The first line of the input gives the number of test cases, **T**. **T** test
-cases follow. Each test case begins with a line containing **N**, the number of
-papers Jorge wrote.
-
-The second line contains **N** integers. The i-th integer is **A**\ |i|, the
-number of citations the i-th paper has.
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case begins with a line containing the two integers N and K. The second line contains N integers, the i-th of these is Mi, the number of minutes she will exercise in the i-th session.
 
 Output
 ------
-For each test case, output one line containing ``Case #x: y``, where ``x`` is
-the test case number (starting from 1) and ``y`` is a space-separated list of
-integers. The i-th integer is the H-index score after Jorge wrote his i-th
-paper.
+For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the minimum difficulty possible after up to K additional training sessions are added.
 
 Limits
 ------
