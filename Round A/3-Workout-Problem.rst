@@ -21,16 +21,16 @@ Limits
 | 1 ≤ **T** ≤ 100.
 | For at most 10 test cases, 2 ≤ **N** ≤ 10\ :sup:`5`.
 | For all other test cases, 2 ≤ **N** ≤ 300.
-| 1 ≤ **M**\ :sub:`i` \ ≤ 109.
+| 1 ≤ **M**\ :sub:`i` \ ≤ 10\ :sup:`9`.
 | **M**\ :sub:`i` \ < **M**\ :sub:`i+1` \ for all i.
 
-Test set 1 (Visible)
+Test set 1
 ~~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 1000.
+**K** = 1
 
-Test set 2 (Hidden)
+Test set 2
 ~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 10\ :sup:`5`.
+1 ≤ **K** ≤ 10\ :sup:`5`.
 
 Sample
 ------
