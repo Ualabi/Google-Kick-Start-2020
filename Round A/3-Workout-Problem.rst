@@ -44,7 +44,7 @@ Sample
     100 200 230         Case #1: 50
     
     
-    *Input* 2             Output 2
+    Input 2             Output 2
                         
     3
     5 2
@@ -56,24 +56,13 @@ Sample
 
 Sample #1
 ~~~~~~~~~~~~~~~~~~~~
-In Sample Case #1, Jorge wrote **N** = 3 papers.
-
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 1st and 3rd papers).
+In Case #1: Tambourine can add up to one session. The added sessions are marked in bold: 100 **150** 200 230. The difficulty is now 50.
 
 Sample #2
 ~~~~~~~~~~~~~~~~~~~~
-In Sample Case #2, Jorge wrote **N** = 6 papers.
+In Case #1: Tambourine can add up to six sessions. The added sessions are marked in bold: 9 10 **12** **14** **16** **18** 20 **23** 26 **29** 30. The difficulty is now 3.
 
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 2nd and 3rd papers).
-- After the 4th paper, Jorge's H-index score is still 2.
-- After the 5th paper, Jorge's H-index score is still 2.
-- After the 6th paper, Jorge's H-index score is 3, since he has 3 papers with
-  at least 3 citations (the 2nd, 3rd and 6th papers).
+In Case #2: Tambourine can add up to three sessions. The added sessions are marked in bold: 1 2 3 4 5 6 7 **8** **9** 10. The difficulty is now 1. Note that Tambourine only added two sessions.
+
+- Note #1: Only Sample #1 is a valid input for Test set 1. Consequently, Sample #1 will be used as a sample test set for your submissions.
+- Note #2: Unlike previous editions, in Kick Start 2020, all test sets are visible verdict test sets, meaning you receive instant feedback upon submission.
