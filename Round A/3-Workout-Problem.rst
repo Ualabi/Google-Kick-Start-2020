@@ -16,9 +16,7 @@ For each test case, output one line containing Case #x: y, where x is the test c
 
 Limits
 ------
-Time limit: 20 seconds per test set.
-Memory limit: 1GB.
-| Time limit: 50 seconds per test set.
+| Time limit: 20 seconds per test set.
 | Memory limit: 1GB.
 | 1 ≤ **T** ≤ 100.
 | 1 ≤ **A**\ |i| ≤ 10\ :sup:`5`.
