@@ -37,14 +37,14 @@ Sample
 
 ::
 
-    Input 1             Output 1
+    *Input 1             Output 1*
     
     1
     3 1
     100 200 230         Case #1: 50
     
     
-    Input 2             Output 2
+    *Input 2             Output 2*
                         
     3
     5 2
