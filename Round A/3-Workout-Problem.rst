@@ -37,22 +37,22 @@ Sample
 
 ::
 
-    Input           Output
+    Input 1             Output 1
     
-    2
+    1
+    3 1
+    100 200 230         Case #1: 50
+    
+    
+    Input 2             Output 2
+                        
     3
-    5 1 2           Case #1: 1 1 2
-    6               Case #2: 1 1 2 2 2 3
-    1 3 3 2 2 15
-    
-    
-    Input           Output
-    
-    2
-    3
-    5 1 2           Case #1: 1 1 2
-    6               Case #2: 1 1 2 2 2 3
-    1 3 3 2 2 15
+    5 2
+    10 13 15 16 17      Case #1: 2
+    5 6
+    9 10 20 26 30       Case #2: 3
+    8 3
+    1 2 3 4 5 6 7 10    Case #3: 1
 
 Sample #1
 ~~~~~~~~~~~~~~~~~~~~
