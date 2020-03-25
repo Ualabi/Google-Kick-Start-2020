@@ -1,6 +1,6 @@
 Problem
 -------
-Tambourine has prepared a fitness program so that she can become more fit! The program is made of **N** sessions. During the i-th session, Tambourine will exercise for **Mi** minutes. The number of minutes she exercises in each session are strictly increasing.
+Tambourine has prepared a fitness program so that she can become more fit! The program is made of **N** sessions. During the i-th session, Tambourine will exercise for **M_i** minutes. The number of minutes she exercises in each session are strictly increasing.
 
 The difficulty of her fitness program is equal to the maximum difference in the number of minutes between any two consecutive training sessions.
 
