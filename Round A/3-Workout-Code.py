@@ -19,8 +19,7 @@ def getSol(N,K):
         if len(mydict[x]) == 0:
             del mydict[x]
         b += 1
-        c = 1 if a%b else 0
-        c += a//b
+        c = a//b + 1 if a%b else a//b
         mydict[c] =  mydict.get(c,[]) + [[a,b]]
         heapq.heappush(diff,-c)
         K -= 1
