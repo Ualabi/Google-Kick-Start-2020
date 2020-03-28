@@ -2,54 +2,42 @@ Link: https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc7
 
 Problem
 -------
-It is important for researchers to write many high quality academic papers.
-Jorge has recently discovered a way to measure how impactful a researcher's
-papers are: the H-index_.
+Pip has N strings. Each string consists only of letters from A to Z. Pip would like to bundle their strings into groups of size K. Each string must belong to exactly one group.
 
-.. _H-index: https://en.wikipedia.org/wiki/H-index
+The score of a group is equal to the length of the longest prefix shared by all the strings in that group. For example:
 
-The *H-index score* of a researcher is the largest integer h such that the
-researcher has h papers with at least h citations each.
+- The group {RAINBOW, RANK, RANDOM, RANK} has a score of 2 (the longest prefix is 'RA').
+- The group {FIRE, FIREBALL, FIREFIGHTER} has a score of 4 (the longest prefix is 'FIRE').
+- The group {ALLOCATION, PLATE, WORKOUT, BUNDLING} has a score of 0 (the longest prefix is '').
 
-Jorge has written **N** papers in his lifetime. The i-th paper has **A**\ |i|
-citations. The number of citations that each paper has will never change after
-it is written. Please help Jorge determine his H-index score after each paper
-he wrote.
-
-.. |i| raw:: html
-
-    <b><sub>i</sub></b>
+Please help Pip bundle their strings into groups of size K, such that the sum of scores of the groups is maximized.
 
 Input
 -----
-The first line of the input gives the number of test cases, **T**. **T** test
-cases follow. Each test case begins with a line containing **N**, the number of
-papers Jorge wrote.
-
-The second line contains **N** integers. The i-th integer is **A**\ |i|, the
-number of citations the i-th paper has.
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case begins with a line containing the two integers N and K. Then, N lines follow, each containing one of Pip's strings.
 
 Output
 ------
-For each test case, output one line containing ``Case #x: y``, where ``x`` is
-the test case number (starting from 1) and ``y`` is a space-separated list of
-integers. The i-th integer is the H-index score after Jorge wrote his i-th
-paper.
+For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the maximum sum of scores possible.
 
 Limits
 ------
-| Time limit: 50 seconds per test set.
+| Time limit: 20 seconds per test set.
 | Memory limit: 1GB.
 | 1 ≤ **T** ≤ 100.
-| 1 ≤ **A**\ |i| ≤ 10\ :sup:`5`.
+| 2 ≤ N ≤ 10\ :sup:`5`.
+| 2 ≤ K ≤ N.
+| K divides N.
+| Each of Pip's strings contain at least one character.
+| Each string consists only of letters from A to Z.
 
-Test set 1 (Visible)
+Test set 1
 ~~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 1000.
+Each of Pip's strings contain at most 5 characters.
 
-Test set 2 (Hidden)
+Test set 2
 ~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 10\ :sup:`5`.
+The total number of characters in Pip's strings across all test cases is at most 2 × 10\ :sup:`6`.
 
 Sample
 ------
@@ -64,22 +52,22 @@ Sample
     6               Case #2: 1 1 2 2 2 3
     1 3 3 2 2 15
 
-In Sample Case #1, Jorge wrote **N** = 3 papers.
+Sample #1
+~~~~~~~~~~~~~~~~~~~~
+In Case #1, Pip can achieve a total score of 0 by make the groups:
 
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 1st and 3rd papers).
+- {KICK, START}, with a score of 0.
 
-In Sample Case #2, Jorge wrote **N** = 6 papers.
+In Case #2, Pip can achieve a total score of 10 by make the groups:
 
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 2nd and 3rd papers).
-- After the 4th paper, Jorge's H-index score is still 2.
-- After the 5th paper, Jorge's H-index score is still 2.
-- After the 6th paper, Jorge's H-index score is 3, since he has 3 papers with
-  at least 3 citations (the 2nd, 3rd and 6th papers).
+- {G, G}, with a score of 1.
+- {GO, GO}, with a score of 2.
+- {GOO, GOO}, with a score of 3.
+- {GOOO, GOOO}, with a score of 4.
+
+Sample #2
+~~~~~~~~~~~~~~~~~~~
+In Case #1, Pip can achieve a total score of 6 by make the groups:
+
+- {RAINBOW, RANK, RANDOM}, with a score of 2.
+- {FIREBALL, FIREWALL, FIREFIGHTER}, with a score of 4.
