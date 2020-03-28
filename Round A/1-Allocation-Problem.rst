@@ -17,7 +17,7 @@ Limits
 | Time limit: 15 seconds per test set.
 | Memory limit: 1GB.
 | 1 ≤ **T** ≤ 100.
-| 1 ≤ **B** ≤ 105.
+| 1 ≤ **B** ≤ 10\ :sup:`5`.
 | 1 ≤ **A**\ :sub:`i` \ ≤ 1000, for all i.
 
 Test set 1 
@@ -26,7 +26,7 @@ Test set 1
 
 Test set 2
 ~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 105.
+1 ≤ **N** ≤ 10\ :sup:`5`.
 
 Sample
 ------
