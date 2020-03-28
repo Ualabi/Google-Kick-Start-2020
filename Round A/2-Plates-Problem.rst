@@ -2,54 +2,36 @@ Link: https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc7
 
 Problem
 -------
-It is important for researchers to write many high quality academic papers.
-Jorge has recently discovered a way to measure how impactful a researcher's
-papers are: the H-index_.
+Dr. Patel has N stacks of plates. Each stack contains K plates. Each plate has a positive beauty value, describing how beautiful it looks.
 
-.. _H-index: https://en.wikipedia.org/wiki/H-index
+Dr. Patel would like to take exactly P plates to use for dinner tonight. If he would like to take a plate in a stack, he must also take all of the plates above it in that stack as well.
 
-The *H-index score* of a researcher is the largest integer h such that the
-researcher has h papers with at least h citations each.
-
-Jorge has written **N** papers in his lifetime. The i-th paper has **A**\ |i|
-citations. The number of citations that each paper has will never change after
-it is written. Please help Jorge determine his H-index score after each paper
-he wrote.
-
-.. |i| raw:: html
-
-    <b><sub>i</sub></b>
+Help Dr. Patel pick the P plates that would maximize the total sum of beauty values.
 
 Input
 -----
-The first line of the input gives the number of test cases, **T**. **T** test
-cases follow. Each test case begins with a line containing **N**, the number of
-papers Jorge wrote.
-
-The second line contains **N** integers. The i-th integer is **A**\ |i|, the
-number of citations the i-th paper has.
+The first line of the input gives the number of test cases, T. T test cases follow. Each test case begins with a line containing the three integers N, K and P. Then, N lines follow. The i-th line contains K integers, describing the beauty values of each stack of plates from top to bottom.
 
 Output
 ------
-For each test case, output one line containing ``Case #x: y``, where ``x`` is
-the test case number (starting from 1) and ``y`` is a space-separated list of
-integers. The i-th integer is the H-index score after Jorge wrote his i-th
-paper.
+For each test case, output one line containing Case #x: y, where x is the test case number (starting from 1) and y is the maximum total sum of beauty values that Dr. Patel could pick.
 
 Limits
 ------
-| Time limit: 50 seconds per test set.
+| Time limit: 20 seconds per test set.
 | Memory limit: 1GB.
 | 1 ≤ **T** ≤ 100.
-| 1 ≤ **A**\ |i| ≤ 10\ :sup:`5`.
+| 1 ≤ **K** ≤ 30.
+| 1 ≤ **P** ≤ **N** * **K**.
+| The beauty values are between 1 and 100, inclusive.
 
-Test set 1 (Visible)
+Test set 1
 ~~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 1000.
+1 ≤ **N** ≤ 3.
 
-Test set 2 (Hidden)
+Test set 2
 ~~~~~~~~~~~~~~~~~~~
-1 ≤ **N** ≤ 10\ :sup:`5`.
+1 ≤ **N** ≤ 50.
 
 Sample
 ------
@@ -64,22 +46,13 @@ Sample
     6               Case #2: 1 1 2 2 2 3
     1 3 3 2 2 15
 
-In Sample Case #1, Jorge wrote **N** = 3 papers.
+In Sample Case #1, Dr. Patel needs to pick P = 5 plates:
+- He can pick the top 3 plates from the first stack (10 + 10 + 100 = 120).
+- He can pick the top 2 plates from the second stack (80 + 50 = 130) .
+In total, the sum of beauty values is 250.
 
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 1st and 3rd papers).
-
-In Sample Case #2, Jorge wrote **N** = 6 papers.
-
-- After the 1st paper, Jorge's H-index score is 1, since he has 1 paper with at
-  least 1 citation.
-- After the 2nd paper, Jorge's H-index score is still 1.
-- After the 3rd paper, Jorge's H-index score is 2, since he has 2 papers with
-  at least 2 citations (the 2nd and 3rd papers).
-- After the 4th paper, Jorge's H-index score is still 2.
-- After the 5th paper, Jorge's H-index score is still 2.
-- After the 6th paper, Jorge's H-index score is 3, since he has 3 papers with
-  at least 3 citations (the 2nd, 3rd and 6th papers).
+In Sample Case #2, Dr. Patel needs to pick P = 3 plates:
+- He can pick the top 2 plates from the first stack (80 + 80 = 160).
+- He can pick no plates from the second stack.
+- He can pick the top plate from the third stack (20).
+In total, the sum of beauty values is 180.
