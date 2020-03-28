@@ -47,12 +47,20 @@ Sample
     1 3 3 2 2 15
 
 In Sample Case #1, Dr. Patel needs to pick P = 5 plates:
+
 - He can pick the top 3 plates from the first stack (10 + 10 + 100 = 120).
 - He can pick the top 2 plates from the second stack (80 + 50 = 130) .
 In total, the sum of beauty values is 250.
 
 In Sample Case #2, Dr. Patel needs to pick P = 3 plates:
+
 - He can pick the top 2 plates from the first stack (80 + 80 = 160).
 - He can pick no plates from the second stack.
 - He can pick the top plate from the third stack (20).
 In total, the sum of beauty values is 180.
+
+In Case #2: Tambourine can add up to three sessions. The added sessions are marked in bold: 1 2 3 4 5 6 7 **8** **9** 10. The difficulty is now 1. Note that Tambourine only added two sessions.
+
+- Only Sample #1 is a valid input for Test set 1. Consequently, Sample #1 will be used as a sample test set for your submissions.
+- **Note #2:** Unlike previous editions, in Kick Start 2020, all test sets are visible verdict test sets, meaning you receive instant feedback upon submission.
+
