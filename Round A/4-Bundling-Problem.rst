@@ -1,3 +1,5 @@
+Link: https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc7/00000000001d3ff3
+
 Problem
 -------
 It is important for researchers to write many high quality academic papers.
