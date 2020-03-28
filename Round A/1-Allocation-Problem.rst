@@ -1,6 +1,6 @@
 Problem
 -------
-There are **N** houses for sale. The i-th house costs **A** i dollars to buy. You have a budget of **B** dollars to spend.
+There are **N** houses for sale. The i-th house costs **A**\ :sub:`i` \ dollars to buy. You have a budget of **B** dollars to spend.
 
 What is the maximum number of houses you can buy?
 
@@ -18,7 +18,7 @@ Limits
 | Memory limit: 1GB.
 | 1 ≤ **T** ≤ 100.
 | 1 ≤ **B** ≤ 105.
-| 1 ≤ **A**i ≤ 1000, for all i.
+| 1 ≤ **A**\ :sub:`i` \ ≤ 1000, for all i.
 
 Test set 1 
 ~~~~~~~~~~~~~~~~~~~~
