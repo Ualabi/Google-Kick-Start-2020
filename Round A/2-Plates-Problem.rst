@@ -41,13 +41,13 @@ Sample
     Input           Output
     
     2
-    2 4 5           Case #1: 250
+    2 4 5           
     10 10 100 30
-    80 50 10 50
-    3 2 3           Case #2: 180
+    80 50 10 50     Case #1: 250
+    3 2 3           
     80 80
     15 50
-    20 10
+    20 10           Case #2: 180
 
 In Sample Case #1, Dr. Patel needs to pick **P** = 5 plates:
 
