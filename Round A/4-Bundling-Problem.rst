@@ -44,7 +44,7 @@ Sample
 
 ::
 
-    Input           Output
+    Input 1         Output 1
     
     2
     2 2
@@ -58,6 +58,18 @@ Sample
     GOO
     GOOO
     GOOO            Case #1: 10
+    
+
+    Input 2         Output 2
+    
+    1
+    6 3
+    RAINBOW
+    FIREBALL
+    RANK
+    RANDOM
+    FIREWALL
+    FIREGIHTER      Case #1: 6
 
 Sample #1
 ~~~~~~~~~~~~~~~~~~~~
