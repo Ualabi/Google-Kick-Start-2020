@@ -1,5 +1,5 @@
 # https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ffc8/00000000002d8565
-# This algoritgm didnt pass the TLE in python, but it did in c++, thats why I attached both solutions
+# This algoritgm didnt pass the TLE for the second test set in python 3, but it did in c++, thats why I attached both solutions
 
 from numpy import log2 as log2
 logs = [0]
