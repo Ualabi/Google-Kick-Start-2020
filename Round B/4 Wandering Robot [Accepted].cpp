@@ -5,15 +5,15 @@
 #include <math.h>
 using namespace std;
 
+int T, i=1;
 double amount;
-int T, i=1, x=0;
 double logs[200001];
 int W, H, L, U, R, D;
 int w, h, r, d;
 
 int main(){
     logs[0] = 0;
-    for(x=1;x<200001;x++)
+    for(int x=1; x<200001; x++)
         logs[x] = logs[x-1] + log2(x);
     cin >> T;
     while(T--){
