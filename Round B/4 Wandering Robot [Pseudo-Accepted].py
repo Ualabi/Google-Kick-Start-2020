@@ -18,8 +18,6 @@ for i in range(T):
     if 1 < L and D < H:
         d, w = D, L-2
         while w >= 0:
-            # aux = 2**(logs[d+w] - logs[d] - logs[w] - d - w)
-            # print(d,w,aux)
             count += 2**(logs[d+w] - logs[d] - logs[w] - d - w)
             d += 1
             w -= 1
@@ -27,8 +25,6 @@ for i in range(T):
     if 1 < U and R < W:
         r, h = R, U-2
         while h >= 0:
-            # aux = 2**(logs[r+h] - logs[r] - logs[h] - r - h)
-            # print(r,h,aux)
             count += 2**(logs[r+h] - logs[r] - logs[h] - r - h)
             r += 1
             h -= 1
